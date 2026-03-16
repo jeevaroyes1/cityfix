@@ -1,0 +1,19 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "community_notes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "panchayat",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "createdAt",
+          "order": "DESCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

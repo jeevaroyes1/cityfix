@@ -1,0 +1,126 @@
+.helpline-container {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.helpline-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.helpline-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #dc2626;
+    margin-bottom: 0.5rem;
+}
+
+.helpline-header p {
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+.contacts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.contact-card {
+    background: white;
+    border: 2px solid #fee2e2;
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.contact-card:hover {
+    border-color: #dc2626;
+    box-shadow: 0 4px 12px rgba(220, 38, 38, 0.1);
+    transform: translateY(-2px);
+}
+
+.contact-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.contact-number {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #dc2626;
+    margin-bottom: 1.5rem;
+}
+
+.contact-actions {
+    display: flex;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+.btn-call,
+.btn-copy {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.btn-call {
+    background: #22c55e;
+    color: white;
+}
+
+.btn-call:hover {
+    background: #16a34a;
+}
+
+.btn-copy {
+    background: #3b82f6;
+    color: white;
+}
+
+.btn-copy:hover {
+    background: #2563eb;
+}
+
+@media (max-width: 768px) {
+    .helpline-container {
+        padding: 1rem;
+    }
+
+    .contacts-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .contact-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .contact-icon {
+        font-size: 2.5rem;
+    }
+
+    .contact-number {
+        font-size: 1.25rem;
+    }
+
+    .contact-actions {
+        flex-direction: column;
+    }
+
+    .btn-call,
+    .btn-copy {
+        width: 100%;
+    }
+}

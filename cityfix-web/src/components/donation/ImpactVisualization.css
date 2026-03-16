@@ -1,0 +1,238 @@
+.impact-visualization {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.impact-header {
+    margin-bottom: 20px;
+}
+
+.impact-header h3 {
+    margin: 0 0 4px 0;
+    color: var(--text-main);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.impact-header p {
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.impact-card {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.2s ease;
+}
+
+.impact-card:hover {
+    transform: translateY(-1px);
+}
+
+.impact-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    flex-shrink: 0;
+}
+
+.impact-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.impact-quantity {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 2px;
+}
+
+.impact-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: 4px;
+}
+
+.impact-description {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.3;
+}
+
+.efficiency-section {
+    margin-bottom: 24px;
+}
+
+.efficiency-section h4 {
+    margin: 0 0 16px 0;
+    color: var(--text-main);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.efficiency-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.efficiency-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.efficiency-label {
+    min-width: 120px;
+    font-size: 12px;
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.efficiency-bar {
+    flex: 1;
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.efficiency-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.efficiency-value {
+    min-width: 80px;
+    text-align: right;
+    font-size: 12px;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+.impact-summary {
+    display: flex;
+    gap: 20px;
+    padding: 16px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.summary-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+}
+
+.summary-icon {
+    font-size: 20px;
+}
+
+.summary-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 2px;
+}
+
+.summary-label {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.no-impact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 2px dashed var(--border);
+}
+
+.no-impact-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.no-impact h4 {
+    margin: 0 0 8px 0;
+    color: var(--text-main);
+    font-size: 1.1rem;
+}
+
+.no-impact p {
+    margin: 0 0 20px 0;
+    color: var(--text-muted);
+    max-width: 300px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .impact-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .impact-card {
+        padding: 12px;
+    }
+    
+    .impact-summary {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .efficiency-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+    }
+    
+    .efficiency-label {
+        min-width: auto;
+    }
+    
+    .efficiency-value {
+        text-align: left;
+        min-width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .impact-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+    
+    .impact-icon {
+        align-self: center;
+    }
+}

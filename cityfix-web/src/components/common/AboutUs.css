@@ -1,0 +1,116 @@
+/* About Us - Olive Green Theme */
+.about-page {
+    min-height: calc(100vh - 70px);
+    background: var(--bg-main);
+    padding: 3rem 1.5rem;
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    max-width: 800px;
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    color: #5A6F4A;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+
+.about-header p {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+}
+
+.about-content {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.about-section {
+    background: white;
+    padding: 2.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: #5A6F4A;
+    font-size: 1.8rem;
+    margin-bottom: 1.25rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-main);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.about-card {
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+    border-bottom: 4px solid #5A6F4A;
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #5A6F4A;
+}
+
+.about-card h3 {
+    font-size: 1.25rem;
+    color: var(--text-main);
+    margin-bottom: 0.75rem;
+}
+
+.about-card p {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.team-section {
+    background: linear-gradient(to right, rgba(90, 111, 74, 0.05), rgba(90, 111, 74, 0.15));
+    border: 1px solid rgba(90, 111, 74, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-header h1 {
+        font-size: 2rem;
+    }
+
+    .about-header p {
+        font-size: 1.1rem;
+    }
+
+    .about-section {
+        padding: 2rem 1.5rem;
+    }
+}

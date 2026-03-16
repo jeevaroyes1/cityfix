@@ -1,0 +1,52 @@
+name: cityfix
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  firebase_core: ^4.4.0
+  firebase_auth: ^6.1.4
+  google_sign_in: ^6.1.0
+  cloud_firestore: ^6.1.2
+  fl_chart: ^0.70.1
+  google_maps_flutter: ^2.7.0
+  geolocator: ^11.1.0
+  geocoding: ^3.0.0
+  image_picker: ^1.1.1
+  firebase_storage: ^13.0.2
+  intl: ^0.19.0
+  http: ^1.1.0
+  razorpay_flutter: ^1.4.0
+  profanity_filter: ^2.0.0
+  firebase_messaging: ^16.1.1
+  flutter_local_notifications: ^18.0.1
+  google_generative_ai: ^0.4.7
+  url_launcher: ^6.2.5
+
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/google_logo.png
+    - assets/google_logo2.png
+    - assets/logo.png
+
+flutter_icons:
+  image_path: "assets/logo.png"
+  android: true
+  ios: true

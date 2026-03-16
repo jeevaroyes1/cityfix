@@ -1,0 +1,308 @@
+/* User Layout */
+.user-layout {
+    display: flex;
+    min-height: 100vh;
+    padding-top: 64px; /* Height of navbar */
+}
+
+/* Sidebar */
+.user-sidebar {
+    width: 280px;
+    background: white;
+    border-right: 1px solid var(--border-color);
+    padding: 1rem 0;
+    position: fixed;
+    top: 64px; /* Below navbar */
+    left: 0;
+    height: calc(100vh - 64px);
+    overflow-y: auto;
+    transition: width 0.3s ease;
+    z-index: 100;
+}
+
+.user-sidebar.collapsed {
+    width: 80px;
+}
+
+/* Sidebar Navigation */
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    transition: all 0.2s;
+    border-left: 3px solid transparent;
+    position: relative;
+}
+
+.user-sidebar.collapsed .sidebar-item {
+    padding: 1rem 0;
+    justify-content: center;
+    gap: 0;
+}
+
+.sidebar-item:hover {
+    background: #f8fafc;
+    border-left-color: var(--primary-color);
+}
+
+.sidebar-item.active {
+    background: var(--primary-light, #e0f2fe);
+    border-left-color: var(--primary-color);
+}
+
+.user-sidebar.collapsed .sidebar-item:hover,
+.user-sidebar.collapsed .sidebar-item.active {
+    border-left-color: transparent;
+    background: var(--primary-light, #e0f2fe);
+}
+
+.sidebar-icon {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f8fafc;
+    border-radius: 8px;
+    flex-shrink: 0;
+    transition: all 0.2s;
+}
+
+.sidebar-item:hover .sidebar-icon,
+.sidebar-item.active .sidebar-icon {
+    background: white;
+}
+
+.user-sidebar.collapsed .sidebar-icon {
+    background: transparent;
+}
+
+.sidebar-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+}
+
+.user-sidebar.collapsed .sidebar-text {
+    display: none;
+}
+
+.sidebar-text strong {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* Main Content Area */
+.user-main {
+    flex: 1;
+    background: #f8fafc;
+    margin-left: 280px;
+    transition: margin-left 0.3s ease;
+    min-height: 100vh;
+}
+
+.user-main.sidebar-collapsed {
+    margin-left: 80px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .user-sidebar {
+        width: 240px;
+    }
+
+    .user-sidebar.collapsed {
+        width: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .user-layout {
+        flex-direction: column;
+    }
+
+    .user-sidebar {
+        width: 100% !important;
+        height: auto;
+        position: relative;
+        left: 0;
+        border-right: none;
+        border-bottom: 1px solid var(--border-color);
+        padding: 1rem 0;
+    }
+
+    .user-main {
+        margin-left: 0 !important;
+    }
+
+    .sidebar-toggle {
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .sidebar-header {
+        padding: 0 1rem 1rem !important;
+        border-bottom: 1px solid var(--border-color) !important;
+        margin-top: 3rem !important;
+    }
+
+    .sidebar-nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        padding: 0 1rem;
+    }
+
+    .sidebar-item {
+        padding: 0.75rem !important;
+        border-left: none !important;
+        border-radius: 8px;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem !important;
+        justify-content: center !important;
+    }
+
+    .sidebar-item:hover,
+    .sidebar-item.active {
+        background: #f8fafc !important;
+        border-left-color: transparent !important;
+    }
+
+    .sidebar-item.active {
+        background: var(--primary-light, #e0f2fe) !important;
+    }
+
+    .sidebar-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.5rem;
+        background: #f8fafc !important;
+    }
+
+    .sidebar-text {
+        display: flex !important;
+    }
+
+    .sidebar-text strong {
+        font-size: 0.85rem;
+    }
+}
+
+/* Welcome Banner */
+.welcome-banner {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1e40af 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    margin: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.2);
+}
+
+.welcome-content h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.welcome-content p {
+    font-size: 1rem;
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+.welcome-actions {
+    display: flex;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.btn-primary-action,
+.btn-secondary-action {
+    padding: 0.875rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.btn-primary-action {
+    background: white;
+    color: var(--primary-color);
+}
+
+.btn-primary-action:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+.btn-secondary-action {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-secondary-action:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive Welcome Banner */
+@media (max-width: 1024px) {
+    .welcome-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .welcome-actions {
+        width: 100%;
+    }
+
+    .btn-primary-action,
+    .btn-secondary-action {
+        flex: 1;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome-banner {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+
+    .welcome-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-content p {
+        font-size: 0.9rem;
+    }
+
+    .welcome-actions {
+        flex-direction: column;
+    }
+
+    .btn-primary-action,
+    .btn-secondary-action {
+        width: 100%;
+    }
+}

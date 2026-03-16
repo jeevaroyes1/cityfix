@@ -1,0 +1,93 @@
+.donation-chart {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.chart-header h3 {
+    margin: 0;
+    color: var(--text-main);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.chart-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chart-type-select {
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: white;
+    color: var(--text-main);
+    font-size: 14px;
+    min-width: 120px;
+}
+
+.chart-container {
+    flex: 1;
+    position: relative;
+    min-height: 300px;
+    max-height: 400px;
+}
+
+.no-data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    color: var(--text-muted);
+    font-size: 16px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 2px dashed var(--border);
+}
+
+/* Chart.js responsive overrides */
+.chart-container canvas {
+    max-height: 400px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .chart-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .chart-controls {
+        justify-content: center;
+    }
+    
+    .chart-container {
+        min-height: 250px;
+        max-height: 300px;
+    }
+    
+    .chart-container canvas {
+        max-height: 300px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .chart-container {
+        min-height: 200px;
+        max-height: 250px;
+    }
+    
+    .chart-container canvas {
+        max-height: 250px !important;
+    }
+}

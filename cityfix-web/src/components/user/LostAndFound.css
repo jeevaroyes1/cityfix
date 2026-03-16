@@ -1,0 +1,1214 @@
+/* Lost and Found - Olive Green Theme */
+.lf-page {
+    min-height: 100vh;
+    background: var(--bg-alt);
+}
+
+/* Page Header */
+.lf-page-header {
+    background: linear-gradient(135deg, #7096D1 0%, #5a7ab8 100%);
+    padding: 2rem 2rem;
+    margin: 0;
+    color: white;
+    box-shadow: 0 2px 8px rgba(112, 150, 209, 0.15);
+}
+
+.lf-header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.lf-page-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: white;
+}
+
+.lf-page-header p {
+    font-size: 1.1rem;
+    opacity: 0.95;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Welcome Card */
+.lf-welcome-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 1.5rem 1rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #7096D1;
+}
+
+.lf-welcome-icon {
+    font-size: 3rem;
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #7096D1 0%, #5a7ab8 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lf-welcome-content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: #1f2937;
+}
+
+.lf-welcome-content p {
+    font-size: 1rem;
+    color: #6b7280;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Hero Banner */
+.lf-hero-banner {
+    background: linear-gradient(135deg, #7096D1 0%, #5a7ab8 100%);
+    padding: 2.5rem 2rem;
+    margin: 1rem 1rem 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(112, 150, 209, 0.2);
+}
+
+.lf-hero-content {
+    text-align: center;
+    color: white;
+}
+
+.lf-hero-content h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: white;
+}
+
+.lf-hero-content p {
+    font-size: 1.05rem;
+    opacity: 0.95;
+    margin: 0;
+}
+
+/* Info Cards */
+.lf-info-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.lf-info-card {
+    background: white;
+    border-radius: 16px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.lf-info-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: currentColor;
+}
+
+.lf-info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.lf-info-card.card-green {
+    color: #7096D1;
+}
+
+.lf-info-card.card-blue {
+    color: #5a7ab8;
+}
+
+.lf-info-card.card-orange {
+    color: #4a6aa0;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    background: currentColor;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-content h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #64748b;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0.25rem 0;
+    line-height: 1;
+}
+
+.card-desc {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    margin: 0;
+}
+
+.lf-appbar {
+    background: #5A6F4A;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 2px 8px rgba(90, 111, 74, 0.3);
+}
+
+.lf-back-btn {
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: background 0.2s;
+}
+
+.lf-back-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.lf-appbar h1 {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.lf-form-wrapper {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1.5rem 3rem;
+}
+
+.lf-form {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+/* Image Upload */
+.lf-image-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.lf-image-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.lf-image-upload {
+    border: 2px dashed #5A6F4A;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.lf-image-upload:hover {
+    border-color: #4a5d3d;
+    background: rgba(90, 111, 74, 0.03);
+}
+
+.lf-upload-trigger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 180px;
+    cursor: pointer;
+    padding: 2rem;
+}
+
+.lf-upload-placeholder {
+    text-align: center;
+    color: var(--text-muted);
+}
+
+.lf-upload-placeholder .upload-emoji {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.lf-upload-placeholder p {
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+}
+
+.lf-upload-placeholder p span {
+    color: #5A6F4A;
+    font-weight: 600;
+}
+
+.lf-upload-placeholder small {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+}
+
+.lf-preview-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.lf-preview-wrapper img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: contain;
+    display: block;
+}
+
+.lf-preview-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(90, 111, 74, 0.75);
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.lf-preview-wrapper:hover .lf-preview-overlay {
+    opacity: 1;
+}
+
+/* Form Fields */
+.lf-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.lf-field label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.lf-field input,
+.lf-field textarea {
+    padding: 0.75rem 1rem;
+    border: 1.5px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-size: 0.95rem;
+    color: var(--text-main);
+    background: var(--bg-alt);
+    font-family: inherit;
+    transition: all 0.2s;
+}
+
+.lf-field input:focus,
+.lf-field textarea:focus {
+    outline: none;
+    border-color: #5A6F4A;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(90, 111, 74, 0.12);
+}
+
+.lf-field textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.lf-field input[type="date"] {
+    cursor: pointer;
+    color-scheme: light;
+}
+
+/* Submit Button */
+.lf-submit-btn {
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+    background: #7096D1;
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.lf-submit-btn:hover:not(:disabled) {
+    background: #5a7ab8;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(112, 150, 209, 0.35);
+}
+
+.lf-submit-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Spinner */
+.lf-spinner {
+    width: 20px;
+    height: 20px;
+    border: 2.5px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: lf-spin 0.7s linear infinite;
+}
+
+@keyframes lf-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Snackbar */
+.lf-snackbar {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    padding: 0.85rem 1.5rem;
+    border-radius: var(--radius-md);
+    color: white;
+    font-weight: 600;
+    font-size: 0.9rem;
+    z-index: 9999;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    animation: lf-snack-in 0.35s ease forwards;
+    max-width: 90%;
+    text-align: center;
+}
+
+.lf-snackbar.success {
+    background: #5A6F4A;
+}
+
+.lf-snackbar.error {
+    background: #c0392b;
+}
+
+@keyframes lf-snack-in {
+    to {
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+/* Tabs */
+.lf-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 1rem 0;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.lf-tab {
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.lf-tab:hover {
+    color: #5A6F4A;
+}
+
+.lf-tab.active {
+    color: #5A6F4A;
+    border-bottom-color: #5A6F4A;
+}
+
+/* List View */
+.lf-list-wrapper {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1.5rem 3rem;
+}
+
+.lf-loading-text,
+.lf-empty-state {
+    text-align: center;
+    color: var(--text-muted);
+    padding: 3rem;
+    font-size: 1.1rem;
+    background: white;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.lf-items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.lf-item-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.lf-item-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.lf-item-image {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    background: var(--bg-alt);
+}
+
+.lf-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lf-item-status {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.lf-item-status.open {
+    background: #5A6F4A;
+}
+
+.lf-item-status.resolved {
+    background: #6c7a89;
+}
+
+.lf-item-status.in-progress {
+    background: #f39c12;
+}
+
+.lf-item-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.lf-item-date {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.lf-item-desc {
+    font-size: 1rem;
+    color: var(--text-main);
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.lf-item-contact {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border-color);
+    padding-top: 1rem;
+}
+
+.lf-item-contact a {
+    color: #5A6F4A;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.lf-item-contact a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .lf-info-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .lf-hero-banner {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
+    }
+
+    .lf-hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .lf-hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .lf-info-cards {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .lf-info-card {
+        padding: 1.25rem;
+    }
+
+    .card-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 2rem;
+    }
+
+    .card-number {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .lf-form-wrapper {
+        padding: 1rem 1rem 2rem;
+    }
+
+    .lf-form {
+        padding: 1.5rem;
+        gap: 1.25rem;
+    }
+
+    .lf-appbar {
+        padding: 0.75rem 1rem;
+    }
+
+    .lf-hero-banner {
+        padding: 1.5rem 1rem;
+    }
+
+    .lf-hero-content h2 {
+        font-size: 1.25rem;
+    }
+}
+
+/* Dark Mode */
+body.dark-mode .lf-hero-banner {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .lf-info-card {
+    background: #1e293b;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+body.dark-mode .card-number {
+    color: #e2e8f0;
+}
+
+body.dark-mode .card-content h3 {
+    color: #94a3b8;
+}
+
+body.dark-mode .card-desc {
+    color: #64748b;
+}
+
+
+/* Edit Button */
+.lf-edit-btn {
+    margin-top: 0.75rem;
+    padding: 0.5rem 1rem;
+    background: #7096D1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 100%;
+}
+
+.lf-edit-btn:hover {
+    background: #5a7ab8;
+    transform: translateY(-1px);
+}
+
+/* Edit Modal */
+.lf-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    padding: 1rem;
+}
+
+.lf-modal-content {
+    background: white;
+    border-radius: 16px;
+    max-width: 600px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.lf-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.lf-modal-header h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+}
+
+.lf-modal-close {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    border: none;
+    font-size: 1.5rem;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lf-modal-close:hover {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+.lf-modal-form {
+    padding: 2rem;
+}
+
+.lf-modal-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.lf-cancel-btn,
+.lf-update-btn {
+    flex: 1;
+    padding: 0.875rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+}
+
+.lf-cancel-btn {
+    background: white;
+    border: 1px solid #e2e8f0;
+    color: #64748b;
+}
+
+.lf-cancel-btn:hover {
+    background: #f8fafc;
+    border-color: #cbd5e1;
+}
+
+.lf-update-btn {
+    background: #7096D1;
+    color: white;
+}
+
+.lf-update-btn:hover:not(:disabled) {
+    background: #5a7ab8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(112, 150, 209, 0.3);
+}
+
+.lf-update-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Dark Mode - Modal */
+body.dark-mode .lf-modal-content {
+    background: #1e293b;
+}
+
+body.dark-mode .lf-modal-header {
+    border-bottom-color: #334155;
+}
+
+body.dark-mode .lf-modal-header h2 {
+    color: #e2e8f0;
+}
+
+body.dark-mode .lf-modal-close {
+    background: #334155;
+    color: #cbd5e1;
+}
+
+body.dark-mode .lf-modal-close:hover {
+    background: #475569;
+    color: #e2e8f0;
+}
+
+body.dark-mode .lf-modal-actions {
+    border-top-color: #334155;
+}
+
+body.dark-mode .lf-cancel-btn {
+    background: #334155;
+    border-color: #475569;
+    color: #cbd5e1;
+}
+
+body.dark-mode .lf-cancel-btn:hover {
+    background: #475569;
+}
+
+/* Responsive Modal */
+@media (max-width: 768px) {
+    .lf-modal-content {
+        max-height: 95vh;
+    }
+
+    .lf-modal-header {
+        padding: 1.25rem 1.5rem;
+    }
+
+    .lf-modal-form {
+        padding: 1.5rem;
+    }
+
+    .lf-modal-actions {
+        flex-direction: column-reverse;
+    }
+
+    .lf-cancel-btn,
+    .lf-update-btn {
+        width: 100%;
+    }
+}
+/* Search and Filter Styles */
+.lf-search-section {
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-md);
+    border: 2px solid var(--border-light);
+}
+
+.lf-search-bar {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.lf-search-input-wrapper {
+    flex: 1;
+    position: relative;
+}
+
+.lf-search-input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: var(--bg-secondary);
+}
+
+.lf-search-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(45, 80, 22, 0.1);
+}
+
+.lf-search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: var(--text-muted);
+}
+
+.lf-filter-toggle {
+    padding: 1rem 1.5rem;
+    background: linear-gradient(135deg, #7096D1 0%, #5a7ab8 100%);
+    color: white;
+    border: none;
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.lf-filter-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.lf-filter-toggle.active {
+    background: linear-gradient(135deg, #5a7ab8 0%, #4a6aa0 100%);
+}
+
+.lf-filters-panel {
+    border-top: 2px solid var(--border-light);
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+}
+
+.lf-filters-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    align-items: end;
+}
+
+.lf-filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.lf-filter-group label {
+    font-weight: 600;
+    color: var(--text-main);
+    font-size: 0.9rem;
+}
+
+.lf-date-input,
+.lf-status-select {
+    padding: 0.75rem;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-size: 0.95rem;
+    background: var(--bg-secondary);
+    transition: all 0.3s ease;
+}
+
+.lf-date-input:focus,
+.lf-status-select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(45, 80, 22, 0.1);
+}
+
+.lf-filter-actions {
+    display: flex;
+    align-items: end;
+}
+
+.lf-clear-filters-btn {
+    padding: 0.75rem 1.25rem;
+    background: linear-gradient(135deg, #7096D1 0%, #5a7ab8 100%);
+    color: white;
+    border: none;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: fit-content;
+}
+
+.lf-clear-filters-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+.lf-filter-summary {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-light);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.lf-active-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.lf-filter-tag {
+    background: rgba(112, 150, 209, 0.1);
+    color: #7096D1;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid #7096D1;
+}
+
+/* Responsive Search and Filters */
+@media (max-width: 768px) {
+    .lf-search-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .lf-filters-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .lf-filter-summary {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .lf-active-filters {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .lf-search-section {
+        padding: 1rem;
+    }
+    
+    .lf-search-input {
+        padding: 0.875rem 0.875rem 0.875rem 2.5rem;
+    }
+    
+    .lf-search-icon {
+        left: 0.75rem;
+        font-size: 1rem;
+    }
+}
+/* Item Name Styles */
+.lf-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    gap: 1rem;
+}
+
+.lf-item-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin: 0;
+    flex: 1;
+    line-height: 1.3;
+}
+
+.lf-item-date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    background: var(--bg-alt);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-sm);
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+/* Update item description spacing */
+.lf-item-desc {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+/* Enhanced item card layout */
+.lf-item-card {
+    transition: all 0.3s ease;
+}
+
+.lf-item-card:hover .lf-item-name {
+    color: var(--primary-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .lf-item-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .lf-item-name {
+        font-size: 1rem;
+    }
+    
+    .lf-item-date {
+        align-self: flex-end;
+    }
+}
+/* Found Location Styles */
+.lf-item-location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--accent-teal-light);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--accent-teal);
+}
+
+.location-icon {
+    font-size: 1rem;
+    color: var(--accent-teal);
+}
+
+.location-text {
+    font-size: 0.9rem;
+    color: var(--text-main);
+    font-weight: 500;
+    flex: 1;
+}
+
+/* Enhanced item card spacing */
+.lf-item-content {
+    padding: 1.25rem;
+}
+
+/* Hover effects for location */
+.lf-item-card:hover .lf-item-location {
+    background: var(--accent-teal-light);
+    transform: translateX(2px);
+    transition: all 0.3s ease;
+}
+
+.lf-item-card:hover .location-icon {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Form field enhancements for location */
+.lf-field input[id*="location"] {
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.lf-field input[id*="location"]:focus {
+    border-color: var(--accent-teal);
+    box-shadow: 0 0 0 3px rgba(22, 160, 133, 0.1);
+    background: var(--bg-primary);
+}
+
+/* Responsive location display */
+@media (max-width: 480px) {
+    .lf-item-location {
+        padding: 0.4rem 0.6rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .location-text {
+        font-size: 0.85rem;
+    }
+    
+    .location-icon {
+        font-size: 0.9rem;
+    }
+}
+
+/* Dark mode support for location */
+body.dark-mode .lf-item-location {
+    background: rgba(22, 160, 133, 0.15);
+    border-left-color: var(--accent-teal);
+}
+
+body.dark-mode .location-text {
+    color: var(--dark-text);
+}

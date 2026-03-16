@@ -1,0 +1,226 @@
+/* Terms and Conditions Container */
+.terms-container {
+    min-height: 100vh;
+    background: #f8fafc;
+    padding: 2rem;
+}
+
+.terms-header {
+    max-width: 900px;
+    margin: 0 auto 2rem;
+    text-align: center;
+}
+
+.btn-back {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    padding: 0.75rem 1.5rem;
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-weight: 600;
+    color: #64748b;
+    transition: all 0.2s;
+}
+
+.btn-back:hover {
+    background: #f8fafc;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.terms-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.last-updated {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Terms Content */
+.terms-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.terms-intro {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: #f0f9ff;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.terms-intro p {
+    color: #0c4a6e;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0;
+    font-weight: 500;
+}
+
+.terms-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.terms-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.terms-section h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+
+.terms-section p {
+    color: #475569;
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.terms-section p:last-child {
+    margin-bottom: 0;
+}
+
+.terms-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.terms-section ul li {
+    color: #475569;
+    font-size: 1rem;
+    line-height: 1.7;
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.terms-section ul li::before {
+    content: "•";
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+}
+
+.contact-info {
+    background: #f8fafc;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color);
+    font-weight: 500;
+}
+
+.terms-section.agreement {
+    background: #f0f9ff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 2px solid #bae6fd;
+}
+
+.terms-section.agreement h2 {
+    color: var(--primary-color);
+}
+
+.terms-section.agreement p {
+    color: #0c4a6e;
+    font-weight: 500;
+}
+
+/* Terms Footer */
+.terms-footer {
+    max-width: 900px;
+    margin: 2rem auto 0;
+    text-align: center;
+}
+
+.btn-accept {
+    padding: 1rem 3rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.2s;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.btn-accept:hover {
+    background: var(--primary-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .terms-container {
+        padding: 1rem;
+    }
+
+    .btn-back {
+        position: static;
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    .terms-header h1 {
+        font-size: 1.75rem;
+    }
+
+    .terms-content {
+        padding: 2rem 1.5rem;
+        border-radius: 12px;
+    }
+
+    .terms-section h2 {
+        font-size: 1.25rem;
+    }
+
+    .terms-section p,
+    .terms-section ul li {
+        font-size: 0.95rem;
+    }
+
+    .btn-accept {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .terms-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .terms-content {
+        padding: 1.5rem 1rem;
+    }
+
+    .terms-section {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .terms-section h2 {
+        font-size: 1.1rem;
+    }
+}

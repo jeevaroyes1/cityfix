@@ -1,0 +1,167 @@
+/* SLA Page */
+.sla-page {
+    min-height: 100vh;
+    background: #f0f9f8;
+}
+
+/* ─── Hero Split Section ─── */
+.sla-hero-section {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    min-height: 420px;
+}
+
+.sla-image-panel {
+    position: relative;
+    overflow: hidden;
+}
+
+.sla-hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.sla-content-panel {
+    background: #e8f5f4;
+    padding: 4rem 5rem 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.sla-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.5rem;
+}
+
+.sla-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.75;
+}
+
+.sla-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #1e293b;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.sla-lead {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1e293b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.sla-body {
+    font-size: 0.975rem;
+    color: #475569;
+    line-height: 1.8;
+    margin: 0;
+    max-width: 56ch;
+}
+
+/* ─── Cards Section ─── */
+.sla-cards-section {
+    padding: 5rem 6rem;
+    background: white;
+}
+
+.sla-cards-heading {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.sla-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.sla-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 2rem 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    transition: all 0.25s ease;
+}
+
+.sla-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.08);
+    border-color: #3b908c;
+}
+
+.sla-card-icon {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+.sla-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+}
+
+.sla-card p {
+    font-size: 0.9rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 1024px) {
+    .sla-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sla-cards-section {
+        padding: 4rem 3rem;
+    }
+
+    .sla-content-panel {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sla-hero-section {
+        grid-template-columns: 1fr;
+    }
+
+    .sla-image-panel {
+        height: 260px;
+    }
+
+    .sla-content-panel {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .sla-title {
+        font-size: 1.75rem;
+    }
+
+    .sla-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .sla-cards-section {
+        padding: 3rem 1.5rem;
+    }
+}
